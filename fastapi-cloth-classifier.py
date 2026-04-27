@@ -1,9 +1,10 @@
+import platform
 import pathlib
 
-# Fix for model trained on Linux/Colab and loaded on Windows
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
-
+# Fix only for Windows
+if platform.system() == "Windows":
+    temp = pathlib.PosixPath
+    pathlib.PosixPath = pathlib.WindowsPath
 from io import BytesIO
 from pathlib import Path
 from typing import Any

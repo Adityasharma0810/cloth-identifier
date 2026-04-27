@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pillow
+pydantic
+python-multipart
+torch
+torchvision
+fastai
+ipython

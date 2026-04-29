@@ -1,9 +1,6 @@
+# requirements.txt
+
 fastapi
 uvicorn
-pillow
+googletrans==4.0.0-rc1
 pydantic
-python-multipart
-torch
-torchvision
-fastai
-ipython

@@ -1,6 +1,8 @@
+# render.yaml (Optional but Recommended)
+
 services:
   - type: web
-    name: cloth-classifier-api
+    name: translator-api
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python fastapi-cloth-classifier.py
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
